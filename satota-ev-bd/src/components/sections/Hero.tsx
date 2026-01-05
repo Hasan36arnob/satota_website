@@ -96,7 +96,7 @@ export const Hero = () => {
               </div>
               <div>
                 <p className="text-2xl md:text-3xl font-bold text-foreground">10+</p>
-                <p className="text-sm text-muted-foreground">Cities Covered</p>
+                <p className="text-sm text-muted-foreground">Cities Covered...</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
