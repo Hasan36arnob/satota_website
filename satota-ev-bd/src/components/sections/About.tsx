@@ -66,7 +66,6 @@ export const About = () => {
                 alt="EV Charging at Shopping Mall"
                 className="w-full h-[500px] object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
               
               {/* Floating Card */}
               <div className="absolute bottom-6 left-6 right-6 glass rounded-xl p-6">

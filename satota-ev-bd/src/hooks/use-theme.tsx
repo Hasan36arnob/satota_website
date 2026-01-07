@@ -22,7 +22,7 @@ const ThemeProviderContext = createContext<ThemeProviderState>(initialState)
 
 export function ThemeProvider({
   children,
-  defaultTheme = 'dark',
+  defaultTheme = 'light',
   storageKey = 'satota-ui-theme',
   ...props
 }: ThemeProviderProps) {
@@ -45,7 +45,9 @@ export function ThemeProvider({
       return
     }
 
-    root.classList.add(theme)
+    if (theme === 'dark') {
+      root.classList.add('dark')
+    }
   }, [theme])
 
   const value = {
