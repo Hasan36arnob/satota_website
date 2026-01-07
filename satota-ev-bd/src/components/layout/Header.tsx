@@ -135,7 +135,35 @@ export const Header = () => {
                     {link.name}
                   </a>
                 ))}
-                <Button variant="hero" size="lg" className="mt-4" asChild>
+
+                {/* Contact Links for Mobile */}
+                <div className="border-t border-border/50 pt-4 mt-4 space-y-3">
+                  <a
+                    href="tel:+8801777608011"
+                    className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
+                  >
+                    <Phone size={18} />
+                    <span>+8801777608011</span>
+                  </a>
+                  <a
+                    href="https://wa.me/8801777608011"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 text-foreground hover:text-green-500 transition-colors"
+                  >
+                    <WhatsAppIcon size={18} />
+                    <span>WhatsApp</span>
+                  </a>
+                  <a
+                    href="mailto:SATOTABD.ENG@GMAIL.COM"
+                    className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
+                  >
+                    <Mail size={18} />
+                    <span>SATOTABD.ENG@GMAIL.COM</span>
+                  </a>
+                </div>
+
+                <Button variant="hero" size="lg" className="mt-6" asChild>
                   <a href="#contact" onClick={() => setIsOpen(false)}>Get Started</a>
                 </Button>
               </div>
